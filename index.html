@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bato Bato Pick</title>
+    
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/118/ok-hand-sign_1f44c.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript" src="index.js"></script>
+    <div id="content">
+        <h1 id="main-title">BATO BATO PICK</h1>
+
+        <div id="choice-panel">
+            <div class="choice-box" id="rock" onclick="game('rock')">
+                <img src="assets/rock.png" alt="ROCK">
+            </div>
+            <div class="choice-box" id="paper" onclick="game('paper')">
+                <img src="assets/paper.png" alt="PAPER">
+            </div>
+            <div class="choice-box" id="scissors" onclick="game('scissors')">
+                <img src="assets/scissors.png" alt="SCISSORS">
+            </div>
+        </div>
+        
+        <div id="score-panel">
+            <div class="score">
+                <h2 class="score-player">YOU</h2>
+                <h3 id="manScore" class="score-num">0</h3>
+            </div>
+            <h2 class="score-player">VS</h2>
+            <div class="score">
+                <h2 class="score-player">COMPUTER</h2>
+                <h3 id="computerScore" class="score-num">0</h3>
+            </div>
+        </div>
+    
+        <div id="verdict-sheet">
+            <h1 id="verdict"></h1>
+        </div>
+    </div>
+    <div id="game-over"></div>
+    
+</body>
+</html>

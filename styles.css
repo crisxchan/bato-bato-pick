@@ -1,0 +1,118 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #143F6B, #396a9b);
+    margin: 0;
+    position: relative;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico';
+    letter-spacing: 0.15em;
+    color: #FEB139;
+    font-size: 4em;
+    margin: 0;
+}
+
+#score-panel{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15em;
+    background-color:beige ;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.score-player{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70px;
+    margin: 0;
+}
+
+.score-num{
+    font-family: 'Poppins';
+    font-size: 160px;
+    margin: 0;
+}
+
+#verdict-sheet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    letter-spacing: 5px;
+    flex: 1;
+}
+
+#choice-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    height: 270px;
+}
+
+.choice-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 175px;
+    background-color: #FFEA00;
+    border: 5px solid #FEB139;
+    border-radius: 25px;
+    -webkit-transition: 0.5s;
+}
+
+.choice-box:hover{
+    height: 200px;
+    width: 200px;
+}
+
+.game-over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    color: white;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 124px;
+    color: beige;
+    letter-spacing: 10px;
+    transition: .75s;
+}
+
