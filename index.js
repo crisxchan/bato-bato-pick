@@ -1,6 +1,13 @@
 let you = 0;
 let comp = 0;
 
+const buttons = document.querySelectorAll('.choice-box');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => game(button.id));
+});
+
+
 function check(){
     if(you==5){
         reset(true)
@@ -39,7 +46,17 @@ function result(verdict, win, lose){
     setScore(verdict);
 }
 
+function startBattle(){
+    document.getElementById("start-battle").classList.add("start-battle");
+    document.getElementById("start-battle").innerHTML = "BATO";
+    setTimeout(()=>{
+        document.getElementById("start-battle").innerHTML += "BATO";
+        setScore("");
+    }, 500);
+}
+
 function playRound(playerSelection, computerSelection){
+    // startBattle();
     switch(playerSelection){
         case "rock":
             if(computerSelection=="rock") setScore("DRAW");

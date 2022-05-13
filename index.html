@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
     <div id="content">
         <h1 id="main-title">BATO BATO PICK</h1>
 
         <div id="choice-panel">
-            <div class="choice-box" id="rock" onclick="game('rock')">
+            <div class="choice-box" id="rock">
                 <img src="assets/rock.png" alt="ROCK">
             </div>
-            <div class="choice-box" id="paper" onclick="game('paper')">
+            <div class="choice-box" id="paper">
                 <img src="assets/paper.png" alt="PAPER">
             </div>
-            <div class="choice-box" id="scissors" onclick="game('scissors')">
+            <div class="choice-box" id="scissors">
                 <img src="assets/scissors.png" alt="SCISSORS">
             </div>
         </div>
@@ -43,6 +43,7 @@
             <h1 id="verdict"></h1>
         </div>
     </div>
+    <div id="start-battle"></div>
     <div id="game-over"></div>
     
 </body>
