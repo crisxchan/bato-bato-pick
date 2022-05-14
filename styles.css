@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     height: 100%;
 }
@@ -9,6 +14,9 @@ body{
     background-image: linear-gradient(to bottom, #143F6B, #396a9b);
     margin: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img{
@@ -33,7 +41,7 @@ img{
 }
 
 #score-panel{
-    height: 350px;
+    height: 340px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +70,7 @@ img{
 }
 
 #verdict-sheet{
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,15 +85,15 @@ img{
     justify-content: center;
     align-items: center;
     gap: 6em;
-    height: 270px;
+    height: 230px;
 }
 
 .choice-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
     background-color: #FFEA00;
     border: 5px solid #FEB139;
     border-radius: 25px;
@@ -93,8 +102,8 @@ img{
 }
 
 .choice-box:hover{
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 }
 
 .game-over{
@@ -133,5 +142,21 @@ img{
     color: beige;
     letter-spacing: 10px;
     transition: .5s;
+}
+
+#footer{
+    font-family: 'Poppins';
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.ghlogo{
+    font-size: 30px;
+    color: black;
 }
 
